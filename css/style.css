@@ -43,6 +43,8 @@ nav{
     flex-grow: 0;
     background-color: blue;
     overflow-y: auto;
+    position: relative;
+    padding-top:10vh;
 }
 
 #upgrade-bar{
@@ -51,7 +53,8 @@ nav{
     height: 10vh;
     background-color: rgba(167, 44, 44, 0.8);
     z-index:1;
-    position:fixed;
+    position:absolute;
+    top:0;
 }
 
 /* /Blocchi Principali */
