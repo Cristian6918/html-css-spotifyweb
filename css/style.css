@@ -2,6 +2,7 @@
     margin:0;
     box-sizing: border-box;
     font-size:1rem;
+    color:white;
 }
 
 /* Blocchi principali */
@@ -18,7 +19,7 @@ footer{
     height: 10vh;
     width: 100%;
     background-color: aqua;
-    
+   
     
     
 
@@ -28,17 +29,18 @@ main{
     width:100%;
     height: 90vh;
     background-color: brown;
-    display: flex;
+    
     
     
 }
 
 nav{
-    position:relative;
+    
     width:15%;
-    background-color: orange;
-    display:flex;
+    background-color: black;
     flex-direction:column;
+    justify-content: flex-start;
+    
    
 }
 
@@ -67,33 +69,26 @@ nav{
     padding:1rem;
     width:100%;
     height: 10vh;
-    
 }
-
 
 #logo img{
     width:70%;
 }
-
-
 .nav-list{
     display: flex;
     flex-direction:column; 
 }
-
 .nav-list,
 li{ 
-    padding-inline-start: 1rem;
+    padding-inline-start: 0rem;
     padding-inline-end: 0;
 }
-
 .nav-list li{
-    padding-inline-start:0;
+    padding-inline-start:1rem;
     font-size:1.2rem;
     padding-bottom:0.5rem;
     list-style-type: none;
 }
-
 a img{
     width:10%;
    margin-right:0.5rem;
@@ -116,6 +111,7 @@ a{
 .nav-list li a i{
     font-size:3.5rem;
     margin-right:0.7rem;
+    color:grey
 }
 
 .grey  li a{
@@ -127,11 +123,11 @@ a{
 }
 
 #nav-foot{
-    position:absolute;
-    bottom:0;
+    justify-self: flex-end;
+    margin-top:auto;
     padding:1rem;
 }
-#nav-foot :first-child {color:grey;}
+
 #profile{
     height: 3rem;
     width: 3rem;
@@ -150,6 +146,44 @@ a{
     font-size:1.5rem;
 }
 
+.nav-list a:hover{
+    opacity:0.5;
+}
+.white li:first-of-type {
+    border-left:2px solid yellow;
+} 
+
+/**************  footer *************/
+.footer-lateral{
+    padding:1rem;
+    width:20%;
+    background-color: red;
+}
+
+#footer-central{
+    background-color: yellow;
+    width:60%;
+}
+#listening-now-name{
+    flex-direction: column;
+    margin-left: 1rem;
+    justify-content: center;
+}
+
+#listening-now-name h3{
+    font-size:1.5rem;
+}
+.icons{
+    margin-left:2rem;
+    align-items: center;
+}
+.icons i{
+    font-size:2rem;
+    margin-left:1rem;
+    color:grey;
+}
+
+
 
 
 
@@ -157,5 +191,13 @@ a{
 .mar-btm1{
     margin-bottom:0.5rem;
 }
+
+.flex{display: flex;}
+
+.h100{
+    height: 100%;
+}
+
+.grey{color:grey}
 
 
