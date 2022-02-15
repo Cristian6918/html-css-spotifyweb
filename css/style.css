@@ -18,7 +18,7 @@
 footer{
     height: 10vh;
     width: 100%;
-    background-color: aqua;
+    background-color: #282828;
    
     
     
@@ -146,7 +146,7 @@ a{
     font-size:1.5rem;
 }
 
-.nav-list a:hover{
+ a:hover{
     opacity:0.5;
 }
 .white li:first-of-type {
@@ -157,12 +157,16 @@ a{
 .footer-lateral{
     padding:1rem;
     width:20%;
-    background-color: red;
+    
+    justify-content: space-around;
+    align-items: center;
 }
 
 #footer-central{
-    background-color: yellow;
+   
     width:60%;
+    flex-direction: column;
+    align-items: center;
 }
 #listening-now-name{
     flex-direction: column;
@@ -178,10 +182,44 @@ a{
     align-items: center;
 }
 .icons i{
-    font-size:2rem;
+    font-size:1.5rem;
     margin-left:1rem;
     color:grey;
 }
+
+#footer-central-top{
+   
+    height: 50%;
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-central-top a{
+    margin:0 1rem;
+}
+
+#footer-central-top a i{
+    color:white;
+}
+#footer-central-bottom{
+    
+    height: 50%;
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+.fa-play-circle{
+    font-size:2rem;
+}
+
+.status-bar{
+    height:1vh;
+    border-radius:10px;
+}
+
 
 
 
@@ -197,7 +235,25 @@ a{
 .h100{
     height: 100%;
 }
+.w25{
+    width: 25%;
+}
+.w50{
+    width: 50%;
+}
+.w70{
+    width:70%;
+}
 
 .grey{color:grey}
 
+.inline-block{
+    display: inline-block;
+}
+.b-color-grey{
+    background-color:grey;
+}
 
+.b-color-lightgrey{
+    background-color:lightgrey;
+}
