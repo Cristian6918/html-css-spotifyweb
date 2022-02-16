@@ -49,7 +49,7 @@ nav{
 .content{
     width: 85%;
     flex-grow: 0;
-    background-color: blue;
+    background-color: #141922;
     overflow-y: auto;
     overflow-x: hidden;
     
@@ -127,9 +127,7 @@ a{
     color:grey;
 }
 
-.white  li a{
-    color:white;
-}
+
 
 #nav-foot{
     justify-self: flex-end;
@@ -156,9 +154,9 @@ a{
 }
 
  a:hover{
-    opacity:0.5;
+    filter:brightness(2);
 }
-.white li:first-of-type {
+.selected{
     border-left:2px solid yellow;
 } 
 
@@ -179,6 +177,11 @@ a{
     flex-direction: column;
     align-items: center;
 }
+
+.footer-lateral a:hover{
+    opacity:0.5;
+}
+
 #listening-now-name{
     flex-direction: column;
     
@@ -210,6 +213,9 @@ a{
 #footer-central-top a{
     margin:0 1rem;
 }
+#footer-central-top a:hover{
+    opacity:0.5;
+}
 
 #footer-central-top a i{
     color:white;
@@ -229,14 +235,32 @@ a{
 .status-bar{
     height:1vh;
     border-radius:10px;
+    position: relative;
 }
 
 .status-bar:hover  .status-progress{
     filter:brightness(2);
+    background-color: rgb(0, 255, 0);
+}
+.status-bar:hover .cursor{
+    display:block;
 }
 
 .status-progress{
-    background-color:lightgrey;
+    background-color:rgb(211, 211, 211);
+}
+
+.cursor{
+    display:none;
+    top:-0.25vh;
+    position: absolute;
+    height: 1.5vh;
+    left:23%;
+    background-color:white;
+    width:1.5vh;
+    z-index:2;
+    border-radius:50%;
+    padding:0.5rem;
 }
 
 /* *********** /footer ********** */
@@ -244,7 +268,7 @@ a{
 /* ******** upgrade-bard *********/
 
 #upgrade{
-    margin-right:2rem;
+    margin-right:4rem;
     font-size:1.5rem;
     border-radius:2rem;
     padding:0.5rem 2rem;
@@ -253,7 +277,7 @@ a{
     cursor:pointer ;
 }
 #upgrade:hover{
-    opacity:0.5;
+    transform:scale(1.1);
 }
 
 
@@ -273,6 +297,11 @@ a{
 #content-list li{
     display: inline;
 }
+
+#content-list li:first-of-type
+{
+    border-bottom:1px solid yellow;
+}
 .playlists{
     padding:1rem;
     justify-content: flex-start;
@@ -284,12 +313,13 @@ a{
 }
 
 .album{
-    width:calc(100% / 6 );
+    width:calc(100% / 6 - 1rem);
     flex-direction: column;
     align-items: center;
     text-align:center;
-    padding: 0 1rem;
-    
+    margin: 0 0.5em;
+    position: relative;
+  
 }
 .album a{
     margin-top:0.5rem;
@@ -305,6 +335,24 @@ a{
 .content p{
     padding-left:2rem;
 }
+
+.album:hover .play{
+    display: block;
+    
+}
+
+.play{
+    width:100%;
+    background-color: rgba(8,11,18,0.5);
+    position:absolute;
+    top:0;
+    display:none;
+}
+.player{
+    filter: invert(1);
+    transform:scale(0.5)
+}
+
 
 
 
@@ -350,4 +398,8 @@ a{
 h1{
     font-size:2rem;
     padding: 0 2rem;
+}
+
+.radius{
+    border-radius:50%;
 }
