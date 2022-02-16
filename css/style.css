@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-size:1rem;
     color:white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Blocchi principali */
@@ -50,8 +51,10 @@ nav{
     flex-grow: 0;
     background-color: blue;
     overflow-y: auto;
+    overflow-x: hidden;
     position: relative;
     padding-top:10vh;
+    
 }
 
 #upgrade-bar{
@@ -86,12 +89,13 @@ nav{
 li{ 
     padding-inline-start: 0rem;
     padding-inline-end: 0;
+    list-style-type: none;
 }
 .nav-list li{
     padding-inline-start:1rem;
     font-size:1.2rem;
     padding-bottom:0.5rem;
-    list-style-type: none;
+    
 }
 a img{
     width:10%;
@@ -226,6 +230,14 @@ a{
     border-radius:10px;
 }
 
+.status-bar:hover  .status-progress{
+    filter:brightness(2);
+}
+
+.status-progress{
+    background-color:lightgrey;
+}
+
 /* *********** /footer ********** */
 
 /* ******** upgrade-bard *********/
@@ -245,6 +257,53 @@ a{
 
 
 /* ****** /upgrade-bar ******* */
+
+/* *********content ****************** */
+
+
+#content-list{
+    padding:1rem 0;
+    width:70%;
+    margin:auto;
+    justify-content: space-evenly;
+    font-weight: 700;
+}
+
+#content-list li{
+    display: inline;
+}
+.playlists{
+    padding:1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-grow:0;
+    
+    
+}
+
+.album{
+    width:calc(100% / 6 - 2rem);
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+.album a{
+    margin-top:0.5rem;
+}
+.album img{
+    width:100%;
+}
+
+.album h3{
+    font-weight: 800;
+}
+
+
+
+
+
+
 
 
 
@@ -277,6 +336,11 @@ a{
     background-color:grey;
 }
 
-.b-color-lightgrey{
+.status-progress{
     background-color:lightgrey;
+}
+
+h1{
+    font-size:2rem;
+    padding:1rem;
 }
