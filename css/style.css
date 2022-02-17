@@ -1,7 +1,7 @@
 *{
     margin:0;
     box-sizing: border-box;
-    font-size:1rem;
+    font-size:1vw;
     color:white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -289,6 +289,8 @@ li{
 }
 
 #content-list li{
+    margin: 1rem 0;
+    text-align: center;
     display: inline;
 }
 
