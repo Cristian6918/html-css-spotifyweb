@@ -29,15 +29,21 @@
         <main class="flex">
             <!-- ******** nav ******** -->
             <nav class="flex">
-                <div id="logo"><img src="img/logo.svg" alt="spotify"></div>
-                <div class="mar-btm1">
+                <div id="logo"><img class="hide" src="img/logo.svg" alt="spotify"> <img id="small-logo" class="show"
+                        src="img/logo-small.svg" alt=""></div>
+                <div class="mar-btm1 ">
                     <ul class="nav-list grey">
-                        <li class="selected"><a href=""> <img src="img/home.svg" alt=""> Home</a></li>
-                        <li><a href=""><img src="img/search.svg" alt="">Cerca</a> </li>
-                        <li><a href=""><img src="img/libreria.svg" alt="">La tua libreria</a></li>
+                        <li class="selected "><a href=""> <img class="show" src="img/home.svg" alt=""><span
+                                    class="hide">
+                                    Home</span></a>
+                        </li>
+                        <li><a href=""><img class="show" src="img/search.svg" alt=""><span class="hide">Cerca</span>
+                            </a> </li>
+                        <li><a href=""><img class="show" src="img/libreria.svg" alt=""><span class="hide">La tua
+                                    libreria</span> </a></li>
                     </ul>
                 </div>
-                <div class="mar-btm1 ">
+                <div class="mar-btm1 hide">
                     <ul class="nav-list grey ">
                         <h3>Playlist</h3>
                         <li><a href=""> <i class="fas fa-plus-square"></i> Crea Playlist </a>
@@ -52,11 +58,12 @@
                     </ul>
                 </div>
                 <div id="nav-foot">
-                    <a href=""><img src="img/download.svg" alt=""><span class="grey">Installa app</span></a>
+                    <a href=""><img class="show" src="img/download.svg" alt=""><span class="grey hide">Installa
+                            app</span></a>
                     <hr>
                     <a href="">
                         <div id="profile"> <img src="img/profile.svg" alt=""></div>
-                        <span id="profile-name">John Doe</span>
+                        <span id="profile-name" class="hide">John Doe</span>
                     </a>
 
                 </div>
@@ -208,7 +215,7 @@
         <!-- footer -->
         <footer class="flex">
             <div class="footer-lateral flex">
-                <div id="listening-now" class="h100">
+                <div class="h100" id="listening-now">
                     <img class="h100" src="img/sinister.jpeg" alt="">
                 </div>
                 <div id="listening-now-name" class="flex">
