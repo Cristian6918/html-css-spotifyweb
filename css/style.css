@@ -120,7 +120,7 @@ li{
 
 
 
-.nav-list h3{
+#playlist-h3{
     font-size: 1.5rem;
     color:white;
     margin-bottom:0.5rem;
@@ -431,6 +431,7 @@ h1{
     font-size:2rem;
     padding: 0 2rem;
 }
+
 
 .radius{
     border-radius:50%;
