@@ -1,0 +1,31 @@
+@media screen and (max-width:1080px){
+    
+    
+    #content-list{
+        flex-wrap:wrap;
+       
+    }
+    #content-list li{
+        margin:1rem 1rem;
+       
+    }
+
+    .album{
+        width:calc(100% / 4 - 1rem);
+    }
+
+
+    .nav-list li a{
+        font-size:2rem;
+    }
+    .nav-list h3{
+        font-size:2rem;
+    }
+
+    #content-list li a{
+        font-size:1rem;
+    }
+  
+}
+
+@
