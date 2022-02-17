@@ -1,26 +1,35 @@
 *{
     margin:0;
     box-sizing: border-box;
-    font-size:1vh;
+    font-size:12px;
     color:white;
     font-family: 'Montserrat', sans-serif;
 }
 
 /* Blocchi principali */
 
+body{
+    min-height: 100px;
+    
+}
+
 .wrapper{
     display: flex;
     height: 100vh;
     width:100%;
     flex-direction: column;
+   
+   
 
 }
 
 footer{
-    height: 10vh;
+    min-height: 100px;
     width: 100%;
     background-color: #282828;
     justify-content: space-between;
+    z-index:3;
+    
    
     
     
@@ -29,7 +38,7 @@ footer{
 
 main{
     width:100%;
-    height: 90vh;
+    height: calc(100vh - 100px);
     background-color: brown;
     
     
@@ -106,15 +115,16 @@ li{
 .nav-list li a{
     display:flex;
     align-items: center;
-    font-size:2rem;
+    font-size:1rem;
 }
 
 
 
 .nav-list h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:white;
     margin-bottom:0.5rem;
+    margin-left:1rem;
 }
 
 .nav-list li a i{
@@ -145,8 +155,9 @@ li{
     padding: 0.5rem;
     margin-top: 1rem;
     display: inline-block;
-    
 }
+
+
 #profile img{
     width:100%;
 }
@@ -156,7 +167,7 @@ li{
 }
 
  a:hover{
-    filter:brightness(2);
+    filter:brightness(1.5);
 }
 .selected{
     border-left:2px solid yellow;
@@ -169,7 +180,7 @@ li{
     padding:0.5rem;
     width:20%;
     
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -178,10 +189,15 @@ li{
     width:50%;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
 .footer-lateral a:hover{
     opacity:0.5;
+}
+
+#listening-now{
+    height:50%;
 }
 
 #listening-now-name{
@@ -205,7 +221,7 @@ li{
 
 #footer-central-top{
    
-    height: 50%;
+    height: 40%;
     width:80%;
     display: flex;
     justify-content: center;
@@ -216,23 +232,29 @@ li{
     margin:0 1rem;
 }
 #footer-central-top a:hover{
-    opacity:0.5;
+    
+    transform:scale(1.1);
+}
+
+#footer-central-top a i.fa-play-circle{
+    font-size:3rem;
 }
 
 #footer-central-top a i{
     color:white;
+    font-size:2rem;
 }
+ 
+
 #footer-central-bottom{
     
-    height: 50%;
+    height: 40%;
     width:80%;
     display: flex;
     justify-content: space-evenly;
-    align-items: baseline;
+    align-items: center;
 }
-.fa-play-circle{
-    font-size:2rem;
-}
+
 
 .status-bar{
     height:1vh;
@@ -310,8 +332,7 @@ li{
     padding:1rem;
     justify-content: flex-start;
     flex-wrap: wrap;
-    flex-shrink: 0;
-    flex-grow:0;
+    
     
     
 }
@@ -413,4 +434,7 @@ h1{
 
 .radius{
     border-radius:50%;
+}
+.overflow_y_a{
+    overflow-y: auto;
 }
